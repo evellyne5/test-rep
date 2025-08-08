@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Outfit;
+    src: url(qr-code-component-main/fonts/Outfit-VariableFont_wght.ttf);
+    font-weight: 400;
+	font-style: normal;    
+}
+
+body { 
+    background-color: hsl(212, 45%, 89%); 
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    color: hsl(218, 44%, 22%);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    color: hsl(216, 15%, 48%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.allCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.imgQrCode {
+    width: 288px;
+    border-radius: 10px;
+}
+
+.QrCard { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    width: 320px;
+    height: 500px;
+    padding: 16px;
+    border-radius: 20px;
+    gap: 16px;
+
+    h2, p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .QrCard {
+        margin: 100px 40px 10px 40px;
+    }
+}
